@@ -14,6 +14,17 @@ function isValidPassword(password) {
         var regex = /^[0-9]{10}$/;
         return regex.test(phone);
  }
+ $(".toggle-password").on("click",function(){
+     var target = $(this).data('target');
+     var id=$("#"+target);
+     var type=id.attr("type");
+     if(type=="password"){
+        id.attr("type","text")
+     }else{
+        id.attr("type","password")
+     }
+
+ })
     $("#button").on("click", function() {
         err = "";
         required = "";

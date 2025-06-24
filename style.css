@@ -32,3 +32,17 @@ input{
     font-weight: bold;
    
 }
+.pass_field {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+.pass_field .toggle-password {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    cursor: pointer;
+    font-size: 18px;
+}
+
