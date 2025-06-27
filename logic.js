@@ -2,6 +2,9 @@ var err = "";
 var required = "";
 
 $(function() {
+    $('#num').on('input', function () {
+        this.value = this.value.replace(/\D/g, '');
+    });
     function isEmail(mail) {
         var regex = /^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9]{2,4}$/;
         return regex.test(mail);
